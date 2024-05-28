@@ -1,0 +1,130 @@
+
+
+.card-body {
+    position: relative;
+    padding-bottom: 60px; 
+}
+
+
+.comment {
+    margin-bottom: 1rem;
+    padding: 15px;
+    background-color: #ffffff; 
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    position: relative; 
+    text-align: right;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.comment::before {
+    content: ""; 
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    color:#8e2800;
+}
+
+.comment-body {
+    margin-top: .5rem;
+}
+
+.comment-date {
+    font-size: 0.85rem; 
+    color: #6d6d6d; 
+    margin-bottom: 4px;
+}
+
+.blogPost {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100px;
+    margin: 2rem auto;
+    border: 1px solid #fbe5d6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fffaf6;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.postBody {
+    padding: 1.5rem;
+    color: #5d4037;
+}
+
+.postTitle {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #8e2800;
+}
+
+.postDate {
+    font-size: 0.875rem;
+    color: #8e2800;
+    margin-bottom: 1.5rem;
+}
+
+.postContent {
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 2px dashed #fbe5d6;
+    padding-top: 1rem;
+}
+
+.replyButton {
+    color: #8e2800;
+    background-color: #f0e6d2;
+    border: 1px solid #8e2800;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+    margin-right: 0;
+    align-self: flex-end;
+}
+.replyButton:hover, .replyButton:focus {
+    background-color: #8e2800;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.commentsSection {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-top: 2px solid #dcdcdc;
+    border-left: 4px solid #8e2800;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.toggleCommentsLabel{
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+    font-size: 1.2em;
+}

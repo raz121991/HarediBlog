@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.rtl-text {
+  direction: rtl;
+  text-align: right;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fffaf6;
+  background-image: url('/wedding.jpg');
+  background-size: cover;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.App > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+main {
+  flex: 1;
+  padding: 0 20px;
+}

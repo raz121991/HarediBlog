@@ -1,0 +1,12 @@
+header h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+    color: saddlebrown;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    direction: rtl;
+  }
